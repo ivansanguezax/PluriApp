@@ -1,3 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #030812;
+  color: #FFFFFF;
+}
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo img {
+  margin-right: 18px;
+  width: 53px;
+}
+header .logo h1 {
+  font-weight: 500;
+}
+header .search input {
+  width: 296px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3C485D;
+  background-image: url(../../assets/svg/User.svg);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-y: center;
+  background-position-x: 10px;
+  padding: 12px 50px;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+}
+header .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .menu li {
+  margin-right: 32px;
+}
+header .menu a {
+  color: #FFFFFF;
+}
+header .menu a:hover {
+  color: #fdae8f;
+}
+header .menu .botonHeader {
+  background: #fdae8f;
+  background: linear-gradient(90deg, #fdae8f 0%, #fd1c68 100%);
+  padding: 16px 20px;
+  border-radius: 12px;
+}
+header .menu .botonHeader i {
+  margin-right: 6px;
+}
+header .menu .botonHeader:hover {
+  background: #030812;
+}
 
 /*# sourceMappingURL=style.css.map */

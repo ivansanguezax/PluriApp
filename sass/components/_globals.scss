@@ -1,0 +1,27 @@
+//Colores
+$negroNeutro: #030812;
+$blancoNeutro: #FFFFFF;
+$colorTexto: #8393AF;
+$boton1:#3C485D;
+$backgroundImageColor: #F2B4B0;
+$backgroundImageColor2: #F6FDE2;
+$backgroundImageColor3: #E2F3FE;
+$backgroundImageColor4: #DC5683;
+
+
+
+
+
+//Linear Colors
+@mixin linear1 {
+    background: rgb(253,174,143);
+    background: linear-gradient(90deg, rgba(253,174,143,1) 0%, rgba(253,28,104,1) 100%);
+}
+@mixin linear2 {
+    background: rgb(35,211,164);
+    background: linear-gradient(90deg, rgba(35,211,164,1) 0%, rgba(91,73,207,1) 100%);
+}
+@mixin linear3 {
+    background: rgb(115,158,236);
+    background: linear-gradient(90deg, rgba(115,158,236,1) 0%, rgba(255,140,159,1) 65%);
+}

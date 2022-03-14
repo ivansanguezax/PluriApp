@@ -1,0 +1,62 @@
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:100px;
+    .logo{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        img{
+            margin-right: 18px;
+            width: 53px;
+        }
+        h1{
+            font-weight:500;
+        }
+    }
+    .search{
+        input{
+            width: 296px;
+            height:48px;
+            border: none;
+            border-radius:8px;
+            background-color:$boton1;
+            background-image: url(../../assets/svg/User.svg);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position-y: center;
+            background-position-x:10px;
+            padding: 12px 50px;
+            font-family: 'Poppins', sans-serif;
+            color: $blancoNeutro;
+        }
+    }
+    .menu{
+        ul{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        li{
+            margin-right: 32px;
+        }
+        a{
+            color: $blancoNeutro;
+        }
+        a:hover{
+            color:rgb(253,174,143);
+        }
+        .botonHeader{
+            @include linear1;
+            padding: 16px 20px;
+            border-radius: 12px;
+            i{
+                margin-right:6px;
+            }
+        }
+        .botonHeader:hover{
+            background: $negroNeutro;
+        }
+    }
+}
