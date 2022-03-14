@@ -1,0 +1,52 @@
+main{
+    margin-top:40px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    .main-description{
+        width:470px;
+        h1{
+            font-size:48px;
+            font-weight:400;
+            strong{
+               @include linear1;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: tomato;  
+            }
+        }
+        p{
+            font-size:20px;
+            font-weight:300;
+        }
+        .main-buttons{
+            display: flex;
+            align-items:center;
+            justify-content:space-around;
+            margin-top:40px;
+            a:first-child{
+                @include linear1;
+                color:$blancoNeutro;
+                padding: 21px 56px;
+                font-size: 20px;
+                font-weight:400;
+                border-radius: 16px;
+            }
+            a:last-child{
+                background-color:$negroNeutro;
+                color:$blancoNeutro;
+                border:1px solid $blancoNeutro;
+                padding: 21px 56px;
+                font-size: 20px;
+                font-weight:400;
+                border-radius: 16px;
+            }
+        }
+    }
+    .main-image{
+        margin-left: 50px;
+        img{
+            width:670px; 
+        }
+    }
+}

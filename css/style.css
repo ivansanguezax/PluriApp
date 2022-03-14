@@ -78,4 +78,110 @@ header .menu .botonHeader:hover {
   background: #030812;
 }
 
+main {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-description {
+  width: 470px;
+}
+main .main-description h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+main .main-description h1 strong {
+  background: #fdae8f;
+  background: linear-gradient(90deg, #fdae8f 0%, #fd1c68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;
+}
+main .main-description p {
+  font-size: 20px;
+  font-weight: 300;
+}
+main .main-description .main-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+main .main-description .main-buttons a:first-child {
+  background: #fdae8f;
+  background: linear-gradient(90deg, #fdae8f 0%, #fd1c68 100%);
+  color: #FFFFFF;
+  padding: 21px 56px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+}
+main .main-description .main-buttons a:last-child {
+  background-color: #030812;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 21px 56px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+}
+main .main-image {
+  margin-left: 50px;
+}
+main .main-image img {
+  width: 670px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.steps .step-container {
+  width: 1171px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.steps .step-container .step {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.steps .step-container .step h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 24px 0px 4px;
+}
+.steps .step-container .step p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+}
+.steps .step-container .step a {
+  color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 800px;
+  font-size: 40px;
+}
+.steps .step-container .step:nth-child(1) a {
+  background: #23d3a4;
+  background: linear-gradient(90deg, #23d3a4 0%, #5b49cf 100%);
+}
+.steps .step-container .step:nth-child(2) a {
+  background: #739eec;
+  background: linear-gradient(90deg, #739eec 0%, #ff8c9f 65%);
+}
+.steps .step-container .step:nth-child(3) a {
+  background-color: red;
+}
+.steps .step-container .step:nth-child(4) a {
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

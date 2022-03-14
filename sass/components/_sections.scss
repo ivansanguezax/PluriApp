@@ -1,0 +1,57 @@
+.steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .step-container{
+        width: 1171px; 
+        display: flex;
+        justify-content:space-around;
+        align-items:flex-start;
+        .step{
+            width:236px;
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            h3{
+                font-size:24px;
+                font-weight:400;
+                margin: 24px 0px 4px;
+            }
+            p{
+                margin: 0;
+                font-size:16px;
+                font-weight:200;
+                text-align: center;
+            }
+            a{
+               color: $blancoNeutro;
+               padding: 20px 30px;
+               border-radius: 800px;
+               font-size:40px;
+            }
+        }
+       .step:nth-child(1){
+           a{
+               @include linear2;
+               
+           }
+       }
+       .step:nth-child(2){
+           a{
+               @include linear3; 
+           }
+       }
+       .step:nth-child(3){
+        a{
+            background-color:red;
+        }
+    }   
+    .step:nth-child(4){
+        a{
+            background-color:red;
+        }
+    }
+    }
+}
