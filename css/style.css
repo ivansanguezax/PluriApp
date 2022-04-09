@@ -139,6 +139,11 @@ main .main-image img {
   justify-content: center;
   flex-direction: column;
 }
+.steps h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
 .steps .step-container {
   width: 1171px;
   display: flex;
@@ -182,6 +187,294 @@ main .main-image img {
 }
 .steps .step-container .step:nth-child(4) a {
   background-color: red;
+}
+
+.nfts {
+  margin-top: 130px;
+}
+.nfts-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nfts-description h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.nfts-description a {
+  background: #fdae8f;
+  background: linear-gradient(90deg, #fdae8f 0%, #fd1c68 100%);
+  color: #FFFFFF;
+  padding: 21px 56px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+}
+.nfts-description a i {
+  margin-right: 6px;
+}
+.nfts-description a:hover {
+  background: #030812;
+  color: #fdae8f;
+}
+.nfts .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nfts .cards .card {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.nfts .cards .card-image {
+  width: 300px;
+  height: 300px;
+  background-image: url(../../assets/jpg/producto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.nfts .cards .card-id {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.nfts .cards .card-id-name {
+  margin-left: 15px;
+}
+.nfts .cards .card-id-name h3 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nfts .cards .card-id-name p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8393AF;
+}
+.nfts .cards .card-id-name p strong {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.nfts .cards .card-reactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nfts .cards .card-reactions div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nfts .cards .card-reactions div i {
+  font-size: 16px;
+}
+.nfts .cards .card-reactions div span {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.nfts .cards .card-reactions div span strong {
+  font-weight: 200;
+}
+.nfts .cards .card-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.nfts .cards .card-buttons a:first-child {
+  background-color: #3c485d;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.nfts .cards .card-buttons a:last-child {
+  background: #fdae8f;
+  background: linear-gradient(90deg, #fdae8f 0%, #fd1c68 100%);
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.collection .collection-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.collection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.collection-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.collection-card-grid #c1, .collection-card-grid #c2, .collection-card-grid #c3, .collection-card-grid #c4 {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../assets/jpg/producto.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.collection-description {
+  margin-top: 35px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.collection-description-id {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.collection-description-id-name {
+  margin-left: 10px;
+}
+.collection-description-id-name h3 {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.collection-description-id-name p {
+  margin: 0;
+  font-size: 8px;
+  font-weight: 400;
+  color: #8393AF;
+}
+.collection-description-id-name p strong {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.collection-description-like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collection-description-like i {
+  font-size: 16px;
+}
+.collection-description-like span {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.collection-description-like span strong {
+  font-weight: 200;
+}
+
+.sellers-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sellers-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.sellers-card-id {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sellers-card-id-name {
+  margin-left: 10px;
+}
+.sellers-card-id-name h3 {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.sellers-card-id-name p {
+  margin: 0;
+  font-size: 8px;
+  font-weight: 400;
+  color: #8393AF;
+}
+.sellers-card-id-name p strong {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .colum1 {
+  width: 470px;
+}
+footer .colum1-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .colum1-logo img {
+  margin-right: 10px;
+}
+footer .colum1-logo h1 {
+  font-weight: 500;
+}
+footer .colum1 p {
+  font-weight: 400;
+  color: #8393AF;
+}
+footer .colum1-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+footer .colum1-info i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer .colum1-info span, footer .colum1-info p {
+  margin: 0;
+  font-size: 12px;
+}
+footer .colum2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .colum2-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 570px;
+}
+footer .colum2-block-colum {
+  width: 170px;
+}
+footer .colum2-block-colum h3 {
+  font-weight: 300;
+  font-size: 20px;
+}
+footer .colum2-block-colum a {
+  color: #8393AF;
 }
 
 /*# sourceMappingURL=style.css.map */
