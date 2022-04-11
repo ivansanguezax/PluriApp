@@ -1,7 +1,7 @@
 footer{
-    margin-top:200px;
+    padding: 80px 40px;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:flex-start;
     .colum1{
         width: 470px;
@@ -36,8 +36,7 @@ footer{
         }
 
     }
-    .colum2{
-        
+    .column2{ 
         display: flex;
         align-items:center;
         flex-direction: column;
@@ -55,6 +54,7 @@ footer{
                 }
                 a{
                     color: #8393AF;
+                    line-height:50px;
 
                 }
             }

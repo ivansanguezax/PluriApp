@@ -1,0 +1,247 @@
+@media screen and (max-width:1024px){
+    header{
+        .logo{
+            img{
+                width:40px !important;
+                margin-right: 5px !important;
+
+            }
+            h1{
+                font-size:25px;
+            }
+        }
+        .search input{
+            width:200px !important;
+        }
+        .menu{
+            li{
+                margin-right: 15px !important;
+                font-size: 13px !important;
+            }
+            .botonHeader{
+                padding: 12px 15px !important;
+                font-size: 10px !important;
+            }
+        }
+    }
+    main{
+        .main-image img{
+            width: 330px !important;
+        }
+        .main-description{
+            h1{
+                font-size: 40px !important;
+            }
+            .main-buttons {
+                margin-top: 30px !important;
+                a{
+                    padding:15px 40px !important;
+                    font-size: 15px !important;
+                }
+               
+            }
+        }
+    }
+    .steps {
+        
+        .step-container{
+            justify-content:center !important;
+            width:auto !important;
+        }
+        h1{
+            font-size: 30px !important;
+        }
+        .step{
+            margin-right: 30px;
+            width:180px !important;
+            text-align: center !important;
+            a{
+                font-size: 20px !important;
+                border-radius:500px;
+                padding: 15px 20px !important;
+            }
+            h3{
+                font-size: 15px !important;
+            }
+            p{
+                font-size:12px !important;
+            }
+        }
+    }
+    .nfts{
+        &-description{
+            h1{
+                font-size: 30px !important;
+            }
+            .nftBoton{
+                padding:15px 40px !important;
+                font-size: 15px !important;
+            }
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-image{
+                width:200px !important;
+                height:200px !important;
+            }
+            &-id{
+                img{
+                    width:50px !important;
+                }
+                &-name{
+                    h3{
+                        font-size:15px !important;
+                    }
+                    p{
+                        font-size:10px !important;
+                    }
+                }
+            }
+            &-reactions{
+                &-like{
+                    margin-right: 20px;
+                }
+                &-crown{
+                    margin-right: 20px;
+                }
+            }
+            .card-buttons{
+                a:first-child{
+                    padding: 8px 10px !important;
+                    font-size:10px;
+                    margin-right: 10px;
+                }
+                a:last-child {
+                    padding: 8px 25px !important;
+                    font-size:10px;
+                }
+            }
+        }
+    }
+    .sellers{
+        &-card{
+            padding: 10px 15px !important;
+        }
+    }
+    footer{
+        .colum1{
+            width: auto;
+            &-logo{
+                img{
+                    width:40px !important;
+                    margin-right: 5px !important;
+    
+                }
+                h1{
+                    font-size:25px;
+                }
+            }
+            p{
+                font-size:12px;
+            }
+            &-info{
+                i{
+                    font-size:20px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        justify-content:space-between !important;
+        padding: 40px;
+        height: auto !important;
+    }
+    //  Hamburguer Menu
+    ul{
+        padding-inline-start:0px;
+    }
+    .close, .hamburger{
+        display: initial !important;
+    }
+    .hamburger, .close {
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 58px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        border-radius: 5px;
+      }
+      
+      .hamburger {
+        background: white;
+      }
+      
+      .close {
+        background: black;
+      }
+      
+      .hamburger img, .close img {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .navbar {
+        margin:0px !important;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        list-style: none;
+        background: black;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.2s ease;
+      }
+      
+      .navbar:target {
+        transform: translateY(0);
+      }
+      
+      li a {
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.5rem;
+    }
+    li a:hover, li a:focus {
+        border-bottom: 1px solid white;
+    }
+
+    header .menu li{
+        margin: 10px  0px !important;
+    }
+    .botonHeader {
+        margin-top:20px;
+
+      }
+
+    //   Fin Hamburguer Menu
+
+    main{
+        flex-direction: column-reverse;
+        .main-image{
+            margin-left: 0px !important;
+        }
+        .main-description{
+            text-align: center !important;
+        }
+    }
+    
+}

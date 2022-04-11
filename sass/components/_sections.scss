@@ -1,4 +1,5 @@
 .steps{
+    padding: 50px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +64,7 @@
 
 
 .nfts{
-    margin-top:130px;
+    padding: 50px 10px;
     &-description{
         display: flex;
         justify-content:space-around;
@@ -171,12 +172,12 @@
                     color: $blancoNeutro;
                 }
             }
-        }
-        
+        }      
     }
 }
 
 .collection{
+    padding: 50px 10px;
    .collection-cards{
        display: flex;
        justify-content:space-around;
@@ -256,8 +257,9 @@
 }
 
 .sellers{
-    
+    padding: 50px 10px;
     &-cards{
+        padding: 50px 0px;
         display: flex;
         align-items:center;
         justify-content: space-around;

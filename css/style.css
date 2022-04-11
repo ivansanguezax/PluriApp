@@ -1,3 +1,218 @@
+@media screen and (max-width: 1024px) {
+  header .logo img {
+    width: 40px !important;
+    margin-right: 5px !important;
+  }
+  header .logo h1 {
+    font-size: 25px;
+  }
+  header .search input {
+    width: 200px !important;
+  }
+  header .menu li {
+    margin-right: 15px !important;
+    font-size: 13px !important;
+  }
+  header .menu .botonHeader {
+    padding: 12px 15px !important;
+    font-size: 10px !important;
+  }
+
+  main .main-image img {
+    width: 330px !important;
+  }
+  main .main-description h1 {
+    font-size: 40px !important;
+  }
+  main .main-description .main-buttons {
+    margin-top: 30px !important;
+  }
+  main .main-description .main-buttons a {
+    padding: 15px 40px !important;
+    font-size: 15px !important;
+  }
+
+  .steps .step-container {
+    justify-content: center !important;
+    width: auto !important;
+  }
+  .steps h1 {
+    font-size: 30px !important;
+  }
+  .steps .step {
+    margin-right: 30px;
+    width: 180px !important;
+    text-align: center !important;
+  }
+  .steps .step a {
+    font-size: 20px !important;
+    border-radius: 500px;
+    padding: 15px 20px !important;
+  }
+  .steps .step h3 {
+    font-size: 15px !important;
+  }
+  .steps .step p {
+    font-size: 12px !important;
+  }
+
+  .nfts-description h1 {
+    font-size: 30px !important;
+  }
+  .nfts-description .nftBoton {
+    padding: 15px 40px !important;
+    font-size: 15px !important;
+  }
+  .nfts .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nfts .card-image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .nfts .card-id img {
+    width: 50px !important;
+  }
+  .nfts .card-id-name h3 {
+    font-size: 15px !important;
+  }
+  .nfts .card-id-name p {
+    font-size: 10px !important;
+  }
+  .nfts .card-reactions-like {
+    margin-right: 20px;
+  }
+  .nfts .card-reactions-crown {
+    margin-right: 20px;
+  }
+  .nfts .card .card-buttons a:first-child {
+    padding: 8px 10px !important;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .nfts .card .card-buttons a:last-child {
+    padding: 8px 25px !important;
+    font-size: 10px;
+  }
+
+  .sellers-card {
+    padding: 10px 15px !important;
+  }
+
+  footer .colum1 {
+    width: auto;
+  }
+  footer .colum1-logo img {
+    width: 40px !important;
+    margin-right: 5px !important;
+  }
+  footer .colum1-logo h1 {
+    font-size: 25px;
+  }
+  footer .colum1 p {
+    font-size: 12px;
+  }
+  footer .colum1-info i {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: space-between !important;
+    padding: 40px;
+    height: auto !important;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  .close, .hamburger {
+    display: initial !important;
+  }
+
+  .hamburger, .close {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 58px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    background: white;
+  }
+
+  .close {
+    background: black;
+  }
+
+  .hamburger img, .close img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar {
+    margin: 0px !important;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+    background: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+
+  .navbar:target {
+    transform: translateY(0);
+  }
+
+  li a {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+  }
+
+  li a:hover, li a:focus {
+    border-bottom: 1px solid white;
+  }
+
+  header .menu li {
+    margin: 10px 0px !important;
+  }
+
+  .botonHeader {
+    margin-top: 20px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+  main .main-image {
+    margin-left: 0px !important;
+  }
+  main .main-description {
+    text-align: center !important;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -77,9 +292,12 @@ header .menu .botonHeader i {
 header .menu .botonHeader:hover {
   background: #030812;
 }
+header .close, header .hamburger {
+  display: none;
+}
 
 main {
-  margin-top: 40px;
+  padding: 50px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,6 +352,7 @@ main .main-image img {
 }
 
 .steps {
+  padding: 50px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +409,7 @@ main .main-image img {
 }
 
 .nfts {
-  margin-top: 130px;
+  padding: 50px 10px;
 }
 .nfts-description {
   display: flex;
@@ -304,6 +523,9 @@ main .main-image img {
   color: #FFFFFF;
 }
 
+.collection {
+  padding: 50px 10px;
+}
 .collection .collection-cards {
   display: flex;
   justify-content: space-around;
@@ -379,7 +601,11 @@ main .main-image img {
   font-weight: 200;
 }
 
+.sellers {
+  padding: 50px 10px;
+}
 .sellers-cards {
+  padding: 50px 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -417,9 +643,9 @@ main .main-image img {
 }
 
 footer {
-  margin-top: 200px;
+  padding: 80px 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
 }
 footer .colum1 {
@@ -454,27 +680,28 @@ footer .colum1-info span, footer .colum1-info p {
   margin: 0;
   font-size: 12px;
 }
-footer .colum2 {
+footer .column2 {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-footer .colum2-block {
+footer .column2-block {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 570px;
 }
-footer .colum2-block-colum {
+footer .column2-block-colum {
   width: 170px;
 }
-footer .colum2-block-colum h3 {
+footer .column2-block-colum h3 {
   font-weight: 300;
   font-size: 20px;
 }
-footer .colum2-block-colum a {
+footer .column2-block-colum a {
   color: #8393AF;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
