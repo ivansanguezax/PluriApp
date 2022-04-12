@@ -51,6 +51,9 @@
         h1{
             font-size: 30px !important;
         }
+        div:last-child{
+            margin: 0 !important;
+        }
         .step{
             margin-right: 30px;
             width:180px !important;
@@ -66,12 +69,15 @@
             p{
                 font-size:12px !important;
             }
+            
         }
     }
     .nfts{
         &-description{
+            margin-bottom: 40px;
             h1{
                 font-size: 30px !important;
+                margin: 0 !important;
             }
             .nftBoton{
                 padding:15px 40px !important;
@@ -243,5 +249,97 @@
             text-align: center !important;
         }
     }
+
+    .steps{
+        h1{
+            font-size: 25px !important;
+        }
+        .step{
+            margin-right: 20px;
+            width:140px !important;
+            h3{
+                font-size: 12px !important;
+            }
+            p{
+                font-size:10px !important;
+            }
+        }
+    }
+
+    .nfts{
+        &-description{
+            h1{
+                font-size: 25px !important;
+            }
+            .nftBoton{
+                padding:14px 20px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .sellers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nfts-description{
+            display: flex;
+        }
+        .sellers-cards{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            width:400px;
+        }
+        &-card{
+            padding: 5px 15px !important;
+            img{
+                width:40px;
+            }
+            &-id{
+                &-name{
+                    margin-left: 10px;
+                    h3{
+                        margin: 0px;
+                        font-size: 10px;
+                        font-weight:500;
+                    }
+                    p{
+                        margin: 0;
+                        font-size:5px;
+                        font-weight:400;
+                        color: #8393AF;
+                        strong{
+                            color:$blancoNeutro;
+                            font-weight: 400;
+                            font-size:7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        padding: 40px 10px !important;
+        .colum1{
+            &-logo{
+                justify-content: center !important;
+                
+            }
+            p{
+                text-align: center !important;
+            }
+            &-info{
+                display: none !important;
+            }
+        }
+        .column2{
+            display: none !important;
+            
+        }
+    }
     
 }
+

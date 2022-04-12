@@ -39,6 +39,9 @@
   .steps h1 {
     font-size: 30px !important;
   }
+  .steps div:last-child {
+    margin: 0 !important;
+  }
   .steps .step {
     margin-right: 30px;
     width: 180px !important;
@@ -56,8 +59,12 @@
     font-size: 12px !important;
   }
 
+  .nfts-description {
+    margin-bottom: 40px;
+  }
   .nfts-description h1 {
     font-size: 30px !important;
+    margin: 0 !important;
   }
   .nfts-description .nftBoton {
     padding: 15px 40px !important;
@@ -211,6 +218,85 @@
   }
   main .main-description {
     text-align: center !important;
+  }
+
+  .steps h1 {
+    font-size: 25px !important;
+  }
+  .steps .step {
+    margin-right: 20px;
+    width: 140px !important;
+  }
+  .steps .step h3 {
+    font-size: 12px !important;
+  }
+  .steps .step p {
+    font-size: 10px !important;
+  }
+
+  .nfts-description h1 {
+    font-size: 25px !important;
+  }
+  .nfts-description .nftBoton {
+    padding: 14px 20px !important;
+    font-size: 12px !important;
+  }
+
+  .sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sellers .nfts-description {
+    display: flex;
+  }
+  .sellers .sellers-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 400px;
+  }
+  .sellers-card {
+    padding: 5px 15px !important;
+  }
+  .sellers-card img {
+    width: 40px;
+  }
+  .sellers-card-id-name {
+    margin-left: 10px;
+  }
+  .sellers-card-id-name h3 {
+    margin: 0px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .sellers-card-id-name p {
+    margin: 0;
+    font-size: 5px;
+    font-weight: 400;
+    color: #8393AF;
+  }
+  .sellers-card-id-name p strong {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 7px;
+  }
+
+  footer {
+    padding: 40px 10px !important;
+  }
+  footer .colum1-logo {
+    justify-content: center !important;
+  }
+  footer .colum1 p {
+    text-align: center !important;
+  }
+  footer .colum1-info {
+    display: none !important;
+  }
+  footer .column2 {
+    display: none !important;
   }
 }
 body {
