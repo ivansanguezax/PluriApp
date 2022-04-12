@@ -1,0 +1,130 @@
+.welcome-catalog{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:300px;
+    span{
+        font-size: 16px;
+        color: $backgroundImageColor;
+    }
+    h1{
+        font-size:40px !important;
+        font-weight:400;
+        margin: 0px;
+    }
+}
+.nfts-catalog{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    &-search{
+        input{
+            width: 296px;
+            height:48px;
+            border: none;
+            border-radius:8px;
+            background-color:$boton1;
+            background-image: url(../../assets/svg/User.svg);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position-y: center;
+            background-position-x:10px;
+            padding: 12px 50px;
+            font-family: 'Poppins', sans-serif;
+            color: $blancoNeutro;
+        }
+    }
+    &-container{
+        padding: 50px 0px;
+        .nfts-catalog-nft{
+            border: 2px solid #F2B4B0;
+            padding:10px 30px;
+                &-image{
+                    width:200px;
+                    height: 200px;
+                    background-image: url(../../assets/jpg/producto.jpeg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position-y:top;
+                    background-size: cover;
+                    border-radius:10px;
+                    margin-bottom: 15px;
+                }
+                &-name{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h4{
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+                    span{
+                        font-size: 12px;
+                        font-weight: 500;
+                        background: rgb(63,94,251);
+                        background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+                        color: white;
+                        padding: 5px;
+                        border-radius:5px;
+                    }
+                }
+                &-price{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span{
+                        color: #8393AF;
+                        font-size: 13px;
+                    }
+                    h3{
+                        font-size:20px;
+                        font-weight:500;
+                        margin:5px 0px;
+                    }
+                }
+                &-id{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        color: #8393AF;
+                        font-size: 13px;
+                    }
+                    p{
+                        font-size:13px;
+                        font-weight:500;
+                        margin:5px 0px;
+                    }
+                }
+                &-btn{
+                    display:none;
+                }
+            }
+            .nfts-catalog-nft:hover{
+                border: 2px solid #DC5683;
+                .nfts-catalog-nft-btn-container{
+                    margin-top:20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .nfts-catalog-nft-btn{
+                    display:initial !important;
+                    a{
+                        @include linear1;
+                        color: $blancoNeutro;
+                        padding: 10px 20px;
+                        font-size: 10px;
+                        font-weight:400;
+                        border-radius: 10px;
+                        i{
+                            margin-right:6px;
+                        }
+                    }
+                }
+            }
+        }
+    }   

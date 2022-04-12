@@ -29,6 +29,7 @@
             width: 330px !important;
         }
         .main-description{
+            width: auto !important;
             h1{
                 font-size: 40px !important;
             }
@@ -343,3 +344,110 @@
     
 }
 
+@media screen and (max-width: 425px){
+    header{
+        justify-content: center !important;
+        input{
+            display:none;
+        }
+    }
+
+    main{
+        width: auto !important;
+        .main-image img{
+            width: 260px !important;
+        }
+        .main-description{
+            h1{
+                font-size: 20px !important;
+            }
+            p{
+                font-size: 15px !important;
+            }
+            .main-buttons {
+                margin-top: 30px !important;
+                justify-content:center !important;
+                a{
+                    padding:10px 20px !important;
+                    font-size: 10px !important;
+                }
+                a:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }   
+    }
+    .steps {
+        
+        .step-container{
+            flex-direction: column !important;
+            justify-content:center !important;
+            width:auto !important;
+        }
+        h1{
+            font-size: 30px !important;
+        }
+        div:last-child{
+            margin: 0 !important;
+        }
+        .step{
+            margin-right: 0px;
+            margin-bottom: 40px;
+            width:180px !important;
+            text-align: center !important;
+            a{
+                font-size: 20px !important;
+                border-radius:500px;
+                padding: 15px 20px !important;
+            }
+            h3{
+                font-size: 15px !important;
+            }
+            p{
+                font-size:12px !important;
+            }
+        }
+    }
+
+    .nfts{
+        &-description{
+            a{
+                display: none;
+            }
+        }
+    }
+    .button-querie-container{
+        display: flex;
+        align-items: center;
+        justify-content:center !important;
+        margin-top: 20px;
+    }
+    .button-querie{
+        display:initial !important;
+        margin-top: 40px;
+        @include linear1;
+        color: $blancoNeutro;
+        padding: 10px 20px;
+        font-size: 10px;
+        font-weight:400;
+        border-radius: 16px;
+        
+        i{
+            margin-right:6px;
+        }
+        }
+        a:hover{
+            background: $negroNeutro;
+            color:rgb(253,174,143);
+        }
+    .sellers{
+        &-cards{
+            padding: 30px 0px !important;
+            grid-template-columns: repeat(1,1fr) !important;
+            width: auto !important;
+        }
+        
+
+
+    }
+}
