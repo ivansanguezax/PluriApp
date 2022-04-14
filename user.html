@@ -1,24 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Logo Icono -->
-        <link rel="shortcut icon" href="" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     
-        <!-- Fuentes -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap" rel="stylesheet">
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    
-        <!-- Titulo -->
-        <title>Pluriapp</title>
-    </head>
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+            <!-- Fuentes -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap" rel="stylesheet">
+        
+            <!-- CSS -->
+            <link rel="stylesheet" href="css/style.css">
+        
+            <!-- Titulo -->
+            <title>Pluriapp</title>
+</head>
 <body>
+    <!--=============== HEADER ===============-->
     <header class="header">
         <div class="logo">
             <img src="assets/svg/logo.svg" alt="logo">
@@ -28,27 +33,123 @@
             <input type="search" placeholder="Buscar">
         </div>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Catalogo</a></li>
-                <li><a href="#">Contactanos</a></li>
-                <a class="botonHeader" href="#"> 
+            <ul class="navbar" id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="store.html">Explorar</a></li>
+                <li><a href="sellers.html">Vendedores</a></li>
+                <a class="botonHeader" href="login.html"> 
                     <i class="fa-solid fa-wallet"></i>
                     Conectar Wallet</a>
+                <a class="close" href="#">
+                        <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+                </a>
             </ul>
+            <a class="hamburger" href="#navbar">
+                <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+            </a>
         </nav>
     </header>
 
-    <h1>Bienvenido</h1>
-    <p>Nombre usuario</p>
 
-    <button class="logout">Logout</button>
- 
+    <main class="main-user">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <!-- Insert your image, according to the example size of the portfolio -->
+                        <img src="assets/jpg/profile.JPG" alt="">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Ivan Sangueza</h2>
+                <h3 class="profile__profession">Web developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">7</h3>
+                    <p class="profile__info-description">
+                        Seguidores
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+124</h3>
+                    <p class="profile__info-description">
+                        NFTs
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">96</h3>
+                    <p class="profile__info-description">Ventas</p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <!-- Insert your CV -->
+                <a  href="nft.html" class="button">
+                    Crear NFT <i class="fa-solid fa-plus"></i>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js/scrollreveal.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/userView.js"></script>
+
+
     <!-- iconos -->
     <script src="https://kit.fontawesome.com/378e12fdd6.js" crossorigin="anonymous"></script>
     <!-- Javascript -->
     <script type="module" src="./js/main.js"></script>
-    <script src="./backend/dist/bundle.js"></script>
+
+    <!-- <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        document.getElementById("username").innerHTML = params.user;
+    </script> -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
